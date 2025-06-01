@@ -96,6 +96,9 @@
             toolStripSplitButton1 = new ToolStripSplitButton();
             readConfigToolStripMenuItem = new ToolStripMenuItem();
             toolStripLabel1 = new ToolStripLabel();
+            toolStripSeparator2 = new ToolStripSeparator();
+            FastFlash = new ToolStripComboBox();
+            toolStripLabel3 = new ToolStripLabel();
             COMM_MODE_GB.SuspendLayout();
             BAUD_GB.SuspendLayout();
             CFG_GB.SuspendLayout();
@@ -714,7 +717,7 @@
             // 
             // toolStrip1
             // 
-            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1, toolStripSeparator1, toolStripLabel2, SYSTEMIDv2 });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1, toolStripSeparator1, toolStripLabel2, SYSTEMIDv2, toolStripSeparator2, toolStripLabel3, FastFlash });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(655, 25);
@@ -780,6 +783,24 @@
             toolStripLabel1.Name = "toolStripLabel1";
             toolStripLabel1.Size = new Size(59, 22);
             toolStripLabel1.Text = "System ID";
+            // 
+            // toolStripSeparator2
+            // 
+            toolStripSeparator2.Name = "toolStripSeparator2";
+            toolStripSeparator2.Size = new Size(6, 25);
+            // 
+            // FastFlash
+            // 
+            FastFlash.DropDownStyle = ComboBoxStyle.DropDownList;
+            FastFlash.Name = "FastFlash";
+            FastFlash.Size = new Size(121, 25);
+            FastFlash.Click += toolStripComboBox1_Click;
+            // 
+            // toolStripLabel3
+            // 
+            toolStripLabel3.Name = "toolStripLabel3";
+            toolStripLabel3.Size = new Size(64, 22);
+            toolStripLabel3.Text = "FastFlash : ";
             // 
             // NXPBuggerv1
             // 
@@ -879,6 +900,8 @@
         private ToolStripLabel toolStripLabel2;
         private ToolStripSeparator toolStripSeparator1;
         private ToolStripTextBox SYSTEMIDv2;
+        private ToolStripSeparator toolStripSeparator2;
+        private ToolStripComboBox FastFlash;
         public static TextBox CanDatasRXID;
         public static TextBox CanDatasRXD8;
         public static TextBox CanDatasRXD7;
@@ -889,5 +912,6 @@
         public static TextBox CanDatasRXD2;
         public static TextBox CanDatasRXD1;
         public static TextBox CanDatasRXDLC;
+        private ToolStripLabel toolStripLabel3;
     }
 }

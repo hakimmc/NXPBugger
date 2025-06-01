@@ -23,20 +23,19 @@ namespace NXPBugger
         public static uint BOOT_WAKE_ID = 0x5165;
         public static MessageType BOOT_MSGTYP = MessageType.Extended;
         public static uint BOOT_DLC = 8;
-        //public static byte[] BOOT_START_DATA = {0x4F, 0x54, 0x54, 0x4F, 0x0, 0x0, 0x0, 0x0};
         public static bool IsCanOpen = false;
         private static UInt16 BOOT_CCITT_KEY = 0xCEFA;
         private static byte[] BOOT_RECV_BYTE = new byte[8];
+        public static readonly byte[] START_BL_TX = Encoding.ASCII.GetBytes("BSTT");
+        public static readonly byte[] START_BL_RX = Encoding.ASCII.GetBytes("BSTD");
+        private static readonly byte[] START_MSG_CFG = Encoding.ASCII.GetBytes("!CFG");
+        private static readonly byte[] START_MSG_APP = Encoding.ASCII.GetBytes("!APP");
+        private static readonly byte[] READY_MSG = Encoding.ASCII.GetBytes("!STR");
+        private static readonly byte[] NEXT_MSG = Encoding.ASCII.GetBytes("!NXT");
+        private static readonly byte[] END_MSG = Encoding.ASCII.GetBytes("!JMP");
 
-        public static readonly byte[] START_BL_TX = Encoding.ASCII.GetBytes("!BOOTSTT");
-        public static readonly byte[] START_BL_RX = Encoding.ASCII.GetBytes("!BOOTSTD");
-        private static readonly byte[] START_MSG_CFG = Encoding.ASCII.GetBytes("!CFGxxxx");
-        //public static readonly byte[] WOKE_UP_FROM_APP = Encoding.ASCII.GetBytes("!WAKEAPP");
-        private static readonly byte[] START_MSG_APP = Encoding.ASCII.GetBytes("!APPxxxx");
-        // static readonly byte[] APP_READY_MSG = Encoding.ASCII.GetBytes("!APPSTRT");
-        private static readonly byte[] READY_MSG = Encoding.ASCII.GetBytes("!OTTOSTR");
-        private static readonly byte[] NEXT_MSG = Encoding.ASCII.GetBytes("!OTTONXT");
-        private static readonly byte[] END_MSG = Encoding.ASCII.GetBytes("!OTTOJMP");
+        public static byte[] WakeUpData = new byte[8];
+
 
         public static bool CanConnect(PcanChannel PcanChannel, string BaudRate)
         {
@@ -130,6 +129,9 @@ namespace NXPBugger
         {
             try
             {
+                CanFastFlash canFastFlash = CanFastFlash.Disable;
+                CanMode canMode = CanMode.Write;
+                CanFlashArea canFlashArea = CanFlashArea.Config;
                 TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.Normal);
                 pb.Enabled = true;
                 SW_UPD_BUTTON.Text = "Software Update Started!";
@@ -138,12 +140,9 @@ namespace NXPBugger
                 {
                     case GeneralProgramClass.UploadMode.CONFIG:
                         {
-                            int unixTimestamp = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
-                            for (int indx = 0; indx < 4; indx++)
-                            {
-                                START_MSG_CFG[indx + 4] = (byte)(0xFF & (unixTimestamp >> (24 - (8 * indx))));
-                            }
-                            CanTransmit(PcanChannel, BOOT_WAKE_ID, BOOT_MSGTYP, BOOT_DLC, START_MSG_CFG);
+                            canFlashArea = CanFlashArea.Config;
+                            WakeUpData = CreateBootMessage(canFastFlash, canMode, canFlashArea, 0, START_MSG_CFG);
+                            CanTransmit(PcanChannel, BOOT_WAKE_ID, BOOT_MSGTYP, BOOT_DLC, WakeUpData);
                             if (WaitForMessage(PcanChannel, READY_MSG, 5000) != CanMessageState.OK)
                             {
                                 return false;
@@ -153,12 +152,9 @@ namespace NXPBugger
                         }
                     case GeneralProgramClass.UploadMode.PROGRAM:
                         {
-                            int unixTimestamp = (int)DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds;
-                            for (int indx = 0; indx < 4; indx++)
-                            {
-                                START_MSG_APP[indx + 4] = (byte)(0xFF & (unixTimestamp >> (24 - (8 * indx))));
-                            }
-                            CanTransmit(PcanChannel, BOOT_WAKE_ID, BOOT_MSGTYP, BOOT_DLC, START_MSG_APP);
+                            canFlashArea = CanFlashArea.Application;
+                            WakeUpData = CreateBootMessage(canFastFlash, canMode, canFlashArea, 0, START_MSG_APP);
+                            CanTransmit(PcanChannel, BOOT_WAKE_ID, BOOT_MSGTYP, BOOT_DLC, WakeUpData);
                             if (WaitForMessage(PcanChannel, READY_MSG, 5000) != CanMessageState.OK)
                             {
                                 return false;
@@ -168,7 +164,7 @@ namespace NXPBugger
                         }
                 }
 
-                byte[][] fileChunks = ReadBinFile(filePath);
+                byte[][] fileChunks = ReadBinFile(filePath, canFastFlash, canMode, canFlashArea);
                 int totalChunks = fileChunks.Length;
 
                 for (int i = 0; i < totalChunks; i++)
@@ -235,7 +231,7 @@ namespace NXPBugger
             }
         }
 
-        private static byte[][] ReadBinFile(string filePath)
+        private static byte[][] ReadBinFile(string filePath, CanFastFlash FastFlash, CanMode FlashCmd, CanFlashArea FlashArea)
         {
             int DataIndexController = 0;
             byte[] fileData = File.ReadAllBytes(filePath);
@@ -252,17 +248,20 @@ namespace NXPBugger
                 {
                     Array.Resize(ref chunk, chunkSize);
                 }
-                byte[] packet = new byte[chunkSize + 4];
-                packet[0] = (byte)'~';
-                packet[1] = (byte)DataIndexController++;
                 DataIndexController = DataIndexController > 1 ? 0 : 1;
-                Array.Copy(chunk, 0, packet, 2, chunkSize);
-                byte[] crc = CalculateCRC(packet, 6);
-                packet[chunkSize + 2] = crc[0];
-                packet[chunkSize + 3] = crc[1];
-                chunks[i] = packet;
+                chunks[i] = CreateBootMessage(FastFlash, FlashCmd, FlashArea, DataIndexController, chunk);
             }
             return chunks;
+        }
+
+        public static byte[] CreateBootMessage(CanFastFlash FastFlash, CanMode FlashCmd, CanFlashArea FlashArea, int FlashIndex, byte[] FlashData)
+        {
+            byte CMD = (byte)((int)FastFlash + (((int)FlashCmd)<<1) + (((int)FlashArea)<<2) + 1<<7);
+            byte[] data = new byte[8] { CMD, (byte)FlashIndex, FlashData[0], FlashData[1], FlashData[2], FlashData[3], 0x00, 0x00 };
+            byte[] CRC = CalculateCRC(data, 6);
+            data[6] = CRC[0]; 
+            data[7] = CRC[1];
+            return data;
         }
         private static byte[] CalculateCRC(byte[] data, uint Length)
         {

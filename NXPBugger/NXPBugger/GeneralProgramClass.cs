@@ -36,5 +36,20 @@ namespace NXPBugger
         public static volatile bool FormActive_CFG_Creator = false;
         public static bool FormActive_CFG_Reader = false;
         public static bool ListenInfinite = false;
+        public enum CanFastFlash
+        {
+            Disable = 0,
+            Enable = 1
+        }
+        public enum CanMode
+        {
+            Read = 0,
+            Write = 1
+        }
+        public enum CanFlashArea
+        {
+            Config = 0,
+            Application = 1
+        }
     }
 }
