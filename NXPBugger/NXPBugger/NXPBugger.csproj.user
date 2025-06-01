@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_LastSelectedProfileId>C:\Users\acalg\OneDrive\Belgeler\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\Properties\PublishProfiles\FolderProfile.pubxml</_LastSelectedProfileId>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Update="Config Creator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Config Reader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="LoginPage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="NXPBuggerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>

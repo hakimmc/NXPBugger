@@ -1,0 +1,103 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj",
+        "projectName": "NXPBugger",
+        "projectPath": "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj",
+        "packagesPath": "C:\\Users\\acalg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\obj\\publish\\win-x86\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\acalg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Peak.PCANBasic.NET": {
+              "target": "Package",
+              "version": "[4.10.0.964, )"
+            },
+            "System.IO.Ports": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
+            "WindowsAPICodePack": {
+              "target": "Package",
+              "version": "[8.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
+              "version": "[8.0.2, 8.0.2]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Runtime.win-x86",
+              "version": "[8.0.2, 8.0.2]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
+              "version": "[8.0.2, 8.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.exe
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.deps.json
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.runtimeconfig.json
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.NXPBuggerv1.resources
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Properties.Resources.resources
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.GenerateResource.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfoInputs.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfo.cs
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CoreCompileInputs.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.sourcelink.json
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\refint\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.genruntimeconfig.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\ref\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.AssemblyReference.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP OttoBugger\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CopyComplete
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.exe
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.deps.json
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.runtimeconfig.json
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.AssemblyReference.cache
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.NXPBuggerv1.resources
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Properties.Resources.resources
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.GenerateResource.cache
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfoInputs.cache
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfo.cs
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CoreCompileInputs.cache
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.sourcelink.json
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP Otto.FDDC8628.Up2Date
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\refint\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.genruntimeconfig.cache
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\ref\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\Git\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\PCANBasic.NET.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.exe
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.deps.json
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.runtimeconfig.json
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\PCANBasic.NET.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.AssemblyReference.cache
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.NXPBuggerv1.resources
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Properties.Resources.resources
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.GenerateResource.cache
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfoInputs.cache
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfo.cs
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CoreCompileInputs.cache
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.sourcelink.json
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CopyComplete
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\refint\NXP OttoBugger.dll
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.genruntimeconfig.cache
+C:\Users\acalg\Source\Repos\hakimmc\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\ref\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.exe
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.deps.json
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.runtimeconfig.json
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\PCANBasic.NET.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.AssemblyReference.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.NXPBuggerv1.resources
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Properties.Resources.resources
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.GenerateResource.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfoInputs.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfo.cs
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CoreCompileInputs.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.sourcelink.json
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CopyComplete
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\refint\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.genruntimeconfig.cache
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\ref\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Config_Creator.resources
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.LoginPage.resources
+C:\Users\acalg\OneDrive\Belgeler\GitHub\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Config_Reader.resources
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.exe
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.deps.json
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.runtimeconfig.json
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\PCANBasic.NET.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.AssemblyReference.cache
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Config_Creator.resources
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Config_Reader.resources
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.LoginPage.resources
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.NXPBuggerv1.resources
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Properties.Resources.resources
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.GenerateResource.cache
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfoInputs.cache
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfo.cs
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CoreCompileInputs.cache
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.sourcelink.json
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP Otto.FDDC8628.Up2Date
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\refint\NXP OttoBugger.dll
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.genruntimeconfig.cache
+C:\Users\ARGE13\Documents\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\ref\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.exe
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.deps.json
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.runtimeconfig.json
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\PCANBasic.NET.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\android-x86\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-bionic-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-arm64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-musl-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\linux-x64\native\libSystem.IO.Ports.Native.so
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\maccatalyst-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-arm64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\osx-x64\native\libSystem.IO.Ports.Native.dylib
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\unix\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.IO.Ports.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.AssemblyReference.cache
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Config_Creator.resources
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Config_Reader.resources
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.LoginPage.resources
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.NXPBuggerv1.resources
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXPBugger.Properties.Resources.resources
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.GenerateResource.cache
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfoInputs.cache
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.AssemblyInfo.cs
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CoreCompileInputs.cache
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.sourcelink.json
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.csproj.CopyComplete
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\refint\NXP OttoBugger.dll
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.pdb
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\NXP OttoBugger.genruntimeconfig.cache
+C:\Users\acalg\OneDrive\Belgeler\xxxx\NXP_CustomBL_Program\NXP OttoBugger\NXP OttoBugger\obj\Debug\net8.0-windows\ref\NXP OttoBugger.dll
