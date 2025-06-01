@@ -102,6 +102,9 @@ namespace NXPBugger
         string file = "set.csv";
         private void NXPBuggerv1_Load(object sender, EventArgs e)
         {
+            FastFlash.Items.Add("Disabled");
+            FastFlash.Items.Add("Enabled"); 
+            FastFlash.SelectedIndex = 0;
             Control.CheckForIllegalCrossThreadCalls = false;
             Sw_UpdateStartButton.Enabled = false;
             SwUpdate_ProgressBar.Enabled = false;
@@ -232,27 +235,20 @@ namespace NXPBugger
                 {
                     if (UartClass.UartConnect(UartClass.SerialCom, UartComportCombobox.Text, Convert.ToInt32(BaudCombobox.Text)))
                     {
-                        ConnectButton.Text = "Disconnect from Device";
-                        COMM_MODE_GB.Enabled = false;
-                        BAUD_GB.Enabled = false;
-                        UART_COM_GB.Enabled = false;
-                        SW_UPD_GB.Enabled = true;
-                        TEST_GB.Enabled = true;
-                        UART_TEST_GB.Enabled = true;
-                        CAN_TEST_GB.Enabled = false;
+                        SetUiState(connected: true, isUart: true);
+                        ConnectButton.Text = "Trying to Connect Device";
+                    }
+                    else
+                    {
+                        SetUiState(connected: false, isUart: true);
                     }
                 }
                 //can
                 else
                 {
                     string selectedText = UartComportCombobox.SelectedItem.ToString();
-                    COMM_MODE_GB.Enabled = false;
-                    BAUD_GB.Enabled = false;
-                    UART_COM_GB.Enabled = false;
-                    SW_UPD_GB.Enabled = false;
-                    TEST_GB.Enabled = false;
-                    UART_TEST_GB.Enabled = false;
-                    CAN_TEST_GB.Enabled = false;
+                    SetUiState(connected: true, isUart: false);
+                    ConnectButton.Text = "Trying to Connect Device";
                     if (Enum.TryParse(selectedText, out PcanChannel selectedChannel))
                     {
                         CanbusClass.channel = selectedChannel;
@@ -261,45 +257,25 @@ namespace NXPBugger
                     {
                         CanbusClass.BOOT_ID = 0x5166 + Convert.ToUInt32(SYSTEMIDv2.Text);
                         CanbusClass.BOOT_WAKE_ID = 0x5165 + Convert.ToUInt32(SYSTEMIDv2.Text);
-                        ConnectButton.Text = "Trying to Connect Device";
                         Thread.Sleep(100);
-                        CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
+                        CanbusClass.WakeUpData = CanbusClass.CreateBootMessage(0, 0, 0, 0, CanbusClass.START_BL_TX);
+                        CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.WakeUpData);
                         if (CanbusClass.WaitForMessage(CanbusClass.channel, CanbusClass.START_BL_RX, 1000) == CanMessageState.OK)
                         {
-                            /*if(connect_click_state)
-                            {
-                                return;
-                            }*/
-                            ConnectButton.Text = "Disconnect from Device";
-                            CanbusClass.IsCanOpen = true;
-                            COMM_MODE_GB.Enabled = false;
-                            BAUD_GB.Enabled = false;
-                            UART_COM_GB.Enabled = false;
+                            SetUiState(connected: true, isUart: false);
                             SW_UPD_GB.Enabled = true;
-                            TEST_GB.Enabled = true;
-                            UART_TEST_GB.Enabled = true;
-                            CAN_TEST_GB.Enabled = true;
-                            MessageBox.Show("Bootmode Activated!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            GeneralProgramClass.ListenInfinite = false;
                             InfCanTask = new Thread(InfiniteListenLoop);
                             InfCanTask.Start();
                         }
                         else
                         {
-                            if (CanbusClass.CanDisconnect(CanbusClass.channel))
-                            {
-                                GeneralProgramClass.ListenInfinite = false;
-                                CanbusClass.IsCanOpen = false;
-                                ConnectButton.Text = "Connect to Device";
-                                COMM_MODE_GB.Enabled = true;
-                                BAUD_GB.Enabled = true;
-                                UART_COM_GB.Enabled = true;
-                                SW_UPD_GB.Enabled = false;
-                                TEST_GB.Enabled = false;
-                                UART_TEST_GB.Enabled = false;
-                                CAN_TEST_GB.Enabled = false;
-                            }
+                            CanbusClass.CanDisconnect(CanbusClass.channel);
+                            SetUiState(connected: false, isUart: false);
                         }
+                    }
+                    else
+                    {
+                        SetUiState(connected: false, isUart: false);
                     }
                 }
             }
@@ -308,35 +284,36 @@ namespace NXPBugger
                 //uart disc
                 if (UartRadio.Checked)
                 {
-                    if (UartClass.UartDisconnect(UartClass.SerialCom))
-                    {
-                        ConnectButton.Text = "Connect to Device";
-                        COMM_MODE_GB.Enabled = true;
-                        BAUD_GB.Enabled = true;
-                        UART_COM_GB.Enabled = true;
-                        SW_UPD_GB.Enabled = false;
-                        TEST_GB.Enabled = false;
-                        UART_TEST_GB.Enabled = false;
-                        CAN_TEST_GB.Enabled = false;
-                    }
+                    UartClass.UartDisconnect(UartClass.SerialCom);
+                    SetUiState(connected: false, isUart: true);
+
                 }
                 //can disc
                 else
                 {
-                    if (CanbusClass.CanDisconnect(CanbusClass.channel))
-                    {
-                        GeneralProgramClass.ListenInfinite = false;
-                        CanbusClass.IsCanOpen = false;
-                        ConnectButton.Text = "Connect to Device";
-                        COMM_MODE_GB.Enabled = true;
-                        BAUD_GB.Enabled = true;
-                        UART_COM_GB.Enabled = true;
-                        SW_UPD_GB.Enabled = false;
-                        TEST_GB.Enabled = false;
-                        UART_TEST_GB.Enabled = false;
-                        CAN_TEST_GB.Enabled = false;
-                    }
+                    CanbusClass.CanDisconnect(CanbusClass.channel);
+                    SetUiState(connected: false, isUart: false);
                 }
+            }
+        }
+        void SetUiState(bool connected, bool isUart)
+        {
+            ConnectButton.Text = connected ? "Disconnect from Device" : "Connect to Device";
+            COMM_MODE_GB.Enabled = !connected;
+            BAUD_GB.Enabled = !connected;
+            UART_COM_GB.Enabled = !connected;
+            TEST_GB.Enabled = connected;
+            UART_TEST_GB.Enabled = connected && isUart;
+            CAN_TEST_GB.Enabled = connected && !isUart;
+            if(!connected)
+            {
+                SW_UPD_GB.Enabled = connected;
+            }
+            GeneralProgramClass.ListenInfinite = false;
+
+            if (!connected)
+            {
+                CanbusClass.IsCanOpen = false;
             }
         }
 
@@ -354,7 +331,6 @@ namespace NXPBugger
         bool connect_click_state = false;
         private void ConnectButton_Click(object sender, EventArgs e)
         {
-            //connect_click_state = true;
             TH_CONNECT = new Thread(Connect_Action);
             TH_CONNECT.Start();
         }
@@ -548,6 +524,11 @@ namespace NXPBugger
         private void SYSTEMIDv2_Click(object sender, EventArgs e)
         {
             SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) > 255 ? 255.ToString() : SYSTEMIDv2.Text;
+        }
+
+        private void toolStripComboBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
