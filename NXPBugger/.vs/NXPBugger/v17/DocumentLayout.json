@@ -1,0 +1,121 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\arge13\\documents\\nxpbugger\\nxpbugger\\nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\arge13\\documents\\nxpbugger\\nxpbugger\\nxpbugger\\nxpbuggermain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\nxpbuggermain.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\arge13\\documents\\nxpbugger\\nxpbugger\\nxpbugger\\canbusclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\canbusclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\arge13\\documents\\nxpbugger\\nxpbugger\\nxpbugger\\config creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\config creator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\arge13\\documents\\nxpbugger\\nxpbugger\\nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\arge13\\documents\\nxpbugger\\nxpbugger\\nxpbugger\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Config Creator.cs",
+              "DocumentMoniker": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\Config Creator.cs",
+              "RelativeDocumentMoniker": "NXPBugger\\Config Creator.cs",
+              "ToolTip": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\Config Creator.cs",
+              "RelativeToolTip": "NXPBugger\\Config Creator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:07:18.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\LoginPage.cs",
+              "RelativeDocumentMoniker": "NXPBugger\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\LoginPage.cs",
+              "RelativeToolTip": "NXPBugger\\LoginPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxIAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T06:06:34.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NXPBuggerMain.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.Designer.cs",
+              "RelativeDocumentMoniker": "NXPBugger\\NXPBuggerMain.Designer.cs",
+              "ToolTip": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.Designer.cs",
+              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.Designer.cs",
+              "ViewState": "AgIAAGEDAAAAAAAAAADwv3wDAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:59:05.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CanbusClass.cs",
+              "DocumentMoniker": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\CanbusClass.cs",
+              "RelativeDocumentMoniker": "NXPBugger\\CanbusClass.cs",
+              "ToolTip": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\CanbusClass.cs",
+              "RelativeToolTip": "NXPBugger\\CanbusClass.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAWwHMAAABWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:59:03.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NXPBuggerMain.cs",
+              "DocumentMoniker": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
+              "RelativeDocumentMoniker": "NXPBugger\\NXPBuggerMain.cs",
+              "ToolTip": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
+              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswHAAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:58:28.888Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "NXPBuggerMain.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
+              "RelativeDocumentMoniker": "NXPBugger\\NXPBuggerMain.cs",
+              "ToolTip": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs [Tasar\u0131m]",
+              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T05:56:36.504Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

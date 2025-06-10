@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NXPBugger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6a64f277f2bd99715a887c65cf4de36e1dbc8e66")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ddabc1bf34e84e0e514b9fab96b0db645cc2f573")]
 [assembly: System.Reflection.AssemblyProductAttribute("NXPBugger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NXPBugger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

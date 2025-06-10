@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj": {}
+    "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBugger.csproj": {}
   },
   "projects": {
-    "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj": {
+    "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBugger.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj",
+        "projectUniqueName": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBugger.csproj",
         "projectName": "NXPBugger",
-        "projectPath": "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\NXPBugger.csproj",
-        "packagesPath": "C:\\Users\\acalg\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\acalg\\OneDrive\\Belgeler\\NXP_CustomBL_Program\\NXP OttoBugger\\NXP OttoBugger\\obj\\publish\\win-x86\\",
+        "projectPath": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBugger.csproj",
+        "packagesPath": "C:\\Users\\ARGE13\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ARGE13\\Documents\\NXPBugger\\NXPBugger\\NXPBugger\\obj\\publish\\win-x86\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\acalg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ARGE13\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,7 +38,13 @@
           "warnAsError": [
             "NU1605"
           ]
-        }
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
       },
       "frameworks": {
         "net8.0-windows7.0": {
@@ -46,11 +52,11 @@
           "dependencies": {
             "Peak.PCANBasic.NET": {
               "target": "Package",
-              "version": "[4.10.0.964, )"
+              "version": "[4.10.1.968, )"
             },
             "System.IO.Ports": {
               "target": "Package",
-              "version": "[9.0.3, )"
+              "version": "[9.0.5, )"
             },
             "WindowsAPICodePack": {
               "target": "Package",
@@ -71,15 +77,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Runtime.win-x86",
-              "version": "[8.0.2, 8.0.2]"
+              "version": "[8.0.14, 8.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Runtime.win-x86",
-              "version": "[8.0.2, 8.0.2]"
+              "version": "[8.0.14, 8.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Runtime.win-x86",
-              "version": "[8.0.2, 8.0.2]"
+              "version": "[8.0.14, 8.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -90,7 +96,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
