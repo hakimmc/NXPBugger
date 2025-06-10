@@ -9,7 +9,7 @@ namespace NXPBugger
 {
     public partial class NXPBuggerv1 : Form
     {
-        bool testwindow = false;
+        bool testwindow = true;
         public NXPBuggerv1()
         {
             InitializeComponent();
@@ -107,7 +107,7 @@ namespace NXPBugger
             SwUpdate_ProgressBar.Enabled = false;
             UartClass.SerialCom = new SerialPort();
             UartComportCombobox.Items.AddRange(SerialPort.GetPortNames());
-            this.Size = new Size(286, 390);
+            //this.Size = new Size(650, 390);
             SW_UPD_GB.Enabled = false;
             TEST_GB.Enabled = false;
             try
@@ -137,13 +137,15 @@ namespace NXPBugger
         {
             if (testwindow)
             {
-                this.Size = new Size(286, 390);
+                this.AutoSize = false;
+                this.Size = new Size(270, 390);
                 testwindow = false;
                 OpenTest_Window_Button.Text = "Open Side Window";
             }
             else
             {
-                this.Size = new Size(671, 390);
+                this.AutoSize = true;
+                //this.Size = new Size(650, 390);
                 testwindow = true;
                 OpenTest_Window_Button.Text = "Close Side Window";
             }

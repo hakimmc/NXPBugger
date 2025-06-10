@@ -184,7 +184,7 @@
             CFG_GB.Controls.Add(ConnectButton);
             CFG_GB.Controls.Add(BAUD_GB);
             CFG_GB.Controls.Add(COMM_MODE_GB);
-            CFG_GB.Location = new Point(12, 29);
+            CFG_GB.Location = new Point(5, 29);
             CFG_GB.Name = "CFG_GB";
             CFG_GB.Size = new Size(244, 164);
             CFG_GB.TabIndex = 7;
@@ -197,7 +197,7 @@
             OpenTest_Window_Button.Name = "OpenTest_Window_Button";
             OpenTest_Window_Button.Size = new Size(120, 28);
             OpenTest_Window_Button.TabIndex = 7;
-            OpenTest_Window_Button.Text = "Open Side Window";
+            OpenTest_Window_Button.Text = "Close Side Window";
             OpenTest_Window_Button.UseVisualStyleBackColor = true;
             OpenTest_Window_Button.Click += OpenTest_Window_Button_Click;
             // 
@@ -258,7 +258,7 @@
             SW_UPD_GB.Controls.Add(filename_label);
             SW_UPD_GB.Controls.Add(Sw_UpdateStartButton);
             SW_UPD_GB.Controls.Add(SwUpdate_ProgressBar);
-            SW_UPD_GB.Location = new Point(12, 199);
+            SW_UPD_GB.Location = new Point(5, 199);
             SW_UPD_GB.Name = "SW_UPD_GB";
             SW_UPD_GB.Size = new Size(244, 143);
             SW_UPD_GB.TabIndex = 10;
@@ -279,7 +279,7 @@
             TEST_GB.Controls.Add(SendData);
             TEST_GB.Controls.Add(UART_TEST_GB);
             TEST_GB.Controls.Add(CAN_TEST_GB);
-            TEST_GB.Location = new Point(270, 29);
+            TEST_GB.Location = new Point(254, 29);
             TEST_GB.Name = "TEST_GB";
             TEST_GB.Size = new Size(377, 313);
             TEST_GB.TabIndex = 11;
@@ -717,7 +717,7 @@
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1, toolStripSeparator1, toolStripLabel2, SYSTEMIDv2 });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
-            toolStrip1.Size = new Size(655, 25);
+            toolStrip1.Size = new Size(634, 25);
             toolStrip1.TabIndex = 14;
             toolStrip1.Text = "toolStrip1";
             // 
@@ -730,6 +730,7 @@
             toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             toolStripDropDownButton1.Size = new Size(75, 22);
             toolStripDropDownButton1.Text = "Create File";
+            toolStripDropDownButton1.ToolTipText = "Create File";
             // 
             // Create_Config_File
             // 
@@ -785,7 +786,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(655, 351);
+            AutoSize = true;
+            ClientSize = new Size(634, 351);
             Controls.Add(toolStrip1);
             Controls.Add(TEST_GB);
             Controls.Add(SW_UPD_GB);
