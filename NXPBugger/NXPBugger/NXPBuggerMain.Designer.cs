@@ -85,7 +85,6 @@
             label3 = new Label();
             CanDatasTXID = new TextBox();
             label2 = new Label();
-            label1 = new Label();
             toolStrip1 = new ToolStrip();
             toolStripDropDownButton1 = new ToolStripDropDownButton();
             Create_Config_File = new ToolStripMenuItem();
@@ -197,7 +196,7 @@
             OpenTest_Window_Button.Name = "OpenTest_Window_Button";
             OpenTest_Window_Button.Size = new Size(120, 28);
             OpenTest_Window_Button.TabIndex = 7;
-            OpenTest_Window_Button.Text = "Close Side Window";
+            OpenTest_Window_Button.Text = "Close Test Window";
             OpenTest_Window_Button.UseVisualStyleBackColor = true;
             OpenTest_Window_Button.Click += OpenTest_Window_Button_Click;
             // 
@@ -703,15 +702,6 @@
             label2.TabIndex = 0;
             label2.Text = "TX";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(511, 11);
-            label1.Name = "label1";
-            label1.Size = new Size(69, 15);
-            label1.TabIndex = 12;
-            label1.Text = "SYSTEM ID :";
-            // 
             // toolStrip1
             // 
             toolStrip1.Items.AddRange(new ToolStripItem[] { toolStripDropDownButton1, toolStripSeparator1, toolStripLabel2, SYSTEMIDv2 });
@@ -725,7 +715,6 @@
             // 
             toolStripDropDownButton1.DisplayStyle = ToolStripItemDisplayStyle.Text;
             toolStripDropDownButton1.DropDownItems.AddRange(new ToolStripItem[] { Create_Config_File, readconfig });
-            toolStripDropDownButton1.Image = (Image)resources.GetObject("toolStripDropDownButton1.Image");
             toolStripDropDownButton1.ImageTransparentColor = Color.Magenta;
             toolStripDropDownButton1.Name = "toolStripDropDownButton1";
             toolStripDropDownButton1.Size = new Size(75, 22);
@@ -764,6 +753,7 @@
             SYSTEMIDv2.Size = new Size(25, 25);
             SYSTEMIDv2.Text = "255";
             SYSTEMIDv2.Click += SYSTEMIDv2_Click;
+            SYSTEMIDv2.TextChanged += SYSTEMIDv2_TextChanged;
             // 
             // toolStripSplitButton1
             // 
@@ -791,7 +781,6 @@
             Controls.Add(toolStrip1);
             Controls.Add(TEST_GB);
             Controls.Add(SW_UPD_GB);
-            Controls.Add(label1);
             Controls.Add(CFG_GB);
             FormBorderStyle = FormBorderStyle.FixedSingle;
             Icon = (Icon)resources.GetObject("$this.Icon");
@@ -869,7 +858,6 @@
         public Label label14;
         public TextBox UartDatasTX;
         public Button OpenTest_Window_Button;
-        private Label label1;
         private ToolStrip toolStrip1;
         private ToolStripSplitButton toolStripSplitButton1;
         private ToolStripMenuItem readConfigToolStripMenuItem;

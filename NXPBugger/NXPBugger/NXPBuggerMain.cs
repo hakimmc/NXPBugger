@@ -138,16 +138,16 @@ namespace NXPBugger
             if (testwindow)
             {
                 this.AutoSize = false;
-                this.Size = new Size(270, 390);
+                //this.Size = new Size(270, 390);
                 testwindow = false;
-                OpenTest_Window_Button.Text = "Open Side Window";
+                OpenTest_Window_Button.Text = "Open Test Window";
             }
             else
             {
                 this.AutoSize = true;
                 //this.Size = new Size(650, 390);
                 testwindow = true;
-                OpenTest_Window_Button.Text = "Close Side Window";
+                OpenTest_Window_Button.Text = "Close Test Window";
             }
         }
         private void NXPBuggerv1_FormClosing(object sender, FormClosingEventArgs e)
@@ -239,7 +239,7 @@ namespace NXPBugger
                         BAUD_GB.Enabled = false;
                         UART_COM_GB.Enabled = false;
                         SW_UPD_GB.Enabled = true;
-                        TEST_GB.Enabled = true;
+                        TEST_GB.Enabled = testwindow;
                         UART_TEST_GB.Enabled = true;
                         CAN_TEST_GB.Enabled = false;
                     }
@@ -278,7 +278,7 @@ namespace NXPBugger
                             BAUD_GB.Enabled = false;
                             UART_COM_GB.Enabled = false;
                             SW_UPD_GB.Enabled = true;
-                            TEST_GB.Enabled = true;
+                            TEST_GB.Enabled = testwindow;
                             UART_TEST_GB.Enabled = true;
                             CAN_TEST_GB.Enabled = true;
                             MessageBox.Show("Bootmode Activated!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -549,7 +549,28 @@ namespace NXPBugger
         }
         private void SYSTEMIDv2_Click(object sender, EventArgs e)
         {
-            SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) > 255 ? 255.ToString() : SYSTEMIDv2.Text;
+            /*try
+            {
+                SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) > 255 ? 255.ToString() : SYSTEMIDv2.Text;
+                SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) < 0 ? 0.ToString() : SYSTEMIDv2.Text;
+            }
+            catch
+            {
+                SYSTEMIDv2.Text = 0.ToString();
+            }*/
+        }
+
+        private void SYSTEMIDv2_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) > 255 ? 255.ToString() : Convert.ToUInt32(SYSTEMIDv2.Text).ToString();
+                SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) < 0 ? 0.ToString() : Convert.ToUInt32(SYSTEMIDv2.Text).ToString();
+            }
+            catch
+            {
+                SYSTEMIDv2.Text = 0.ToString();
+            }
         }
     }
 }
