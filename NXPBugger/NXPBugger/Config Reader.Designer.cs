@@ -125,7 +125,6 @@
             groupBox5.Controls.Add(companynum);
             groupBox5.Controls.Add(label17);
             groupBox5.Controls.Add(macaddresstext);
-            groupBox5.Enabled = false;
             groupBox5.Location = new Point(465, 110);
             groupBox5.Name = "groupBox5";
             groupBox5.Size = new Size(228, 127);
@@ -186,7 +185,6 @@
             groupBox4.Controls.Add(label6);
             groupBox4.Controls.Add(CELLCAPAH);
             groupBox4.Controls.Add(label15);
-            groupBox4.Enabled = false;
             groupBox4.Location = new Point(230, 120);
             groupBox4.Name = "groupBox4";
             groupBox4.Size = new Size(229, 117);
@@ -297,7 +295,6 @@
             groupBox6.Controls.Add(label19);
             groupBox6.Controls.Add(tempsensorb);
             groupBox6.Controls.Add(label22);
-            groupBox6.Enabled = false;
             groupBox6.Location = new Point(699, 36);
             groupBox6.Name = "groupBox6";
             groupBox6.Size = new Size(229, 201);
@@ -471,7 +468,6 @@
             groupBox2.Controls.Add(label9);
             groupBox2.Controls.Add(BootModeCB);
             groupBox2.Controls.Add(label12);
-            groupBox2.Enabled = false;
             groupBox2.Location = new Point(13, 10);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(211, 104);
@@ -559,7 +555,6 @@
             groupBox1.Controls.Add(label7);
             groupBox1.Controls.Add(PRINTFDEBUGCB);
             groupBox1.Controls.Add(label8);
-            groupBox1.Enabled = false;
             groupBox1.Location = new Point(465, 10);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(228, 91);
@@ -638,7 +633,6 @@
             groupBox3.Controls.Add(label11);
             groupBox3.Controls.Add(MAJORVERSION);
             groupBox3.Controls.Add(label13);
-            groupBox3.Enabled = false;
             groupBox3.Location = new Point(230, 10);
             groupBox3.Name = "groupBox3";
             groupBox3.Size = new Size(229, 104);
@@ -742,7 +736,6 @@
             CANGB.Controls.Add(label2);
             CANGB.Controls.Add(CAN1_BAUD_CB);
             CANGB.Controls.Add(label1);
-            CANGB.Enabled = false;
             CANGB.Location = new Point(13, 120);
             CANGB.Name = "CANGB";
             CANGB.Size = new Size(211, 117);
@@ -753,7 +746,6 @@
             // date
             // 
             date.AutoSize = true;
-            date.Enabled = false;
             date.Location = new Point(705, 10);
             date.Name = "date";
             date.Size = new Size(40, 15);
