@@ -145,12 +145,13 @@ namespace NXPBugger
                 (byte)('!'),(byte)('C'),(byte)('F'),(byte)('G'),
                 (byte)'E',(byte)'O',(byte)'C',(byte)';'
             };
-            MessageBox.Show("Config Write Success!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //MessageBox.Show("Config Write Success!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
             return bytes;
         }
 
         private void Config_Reader_Load(object sender, EventArgs e)
         {
+            
             SYSTEMID.Value = SYSTEMID.Minimum;
             BOOTTIMEOUT.Value = BOOTTIMEOUT.Minimum;
             MAJORVERSION.Value = MAJORVERSION.Minimum;
@@ -170,6 +171,13 @@ namespace NXPBugger
             maxtemp.Value = maxtemp.Minimum;
             mintemp.Value = mintemp.Minimum;
             tempsensorcount.Value = tempsensorcount.Minimum;
+            BootModeCB.SelectedIndex = 0;
+            CAN1_BAUD_CB.SelectedIndex = 0;
+            CAN2_BAUD_CB.SelectedIndex = 0;
+            CAN3_BAUD_CB.SelectedIndex = 0;
+            CAN4_BAUD_CB.SelectedIndex = 0;
+            PRINTFDEBUGCB.SelectedIndex = 0;
+            UARTBAUDCB.SelectedIndex = 0;
         }
 
         private void Config_Reader_FormClosing(object sender, FormClosingEventArgs e)
