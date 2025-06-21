@@ -224,123 +224,7 @@ namespace NXPBugger
 
         }
         Thread InfCanTask;
-        void Connect_Action()
-        {
-            //connect_click_state = false;
-            if (ConnectButton.Text == "Connect to Device")
-            {
-                //uart
-                if (UartRadio.Checked)
-                {
-                    if (UartClass.UartConnect(UartClass.SerialCom, UartComportCombobox.Text, Convert.ToInt32(BaudCombobox.Text)))
-                    {
-                        ConnectButton.Text = "Disconnect from Device";
-                        COMM_MODE_GB.Enabled = false;
-                        BAUD_GB.Enabled = false;
-                        UART_COM_GB.Enabled = false;
-                        SW_UPD_GB.Enabled = true;
-                        TEST_GB.Enabled = testwindow;
-                        UART_TEST_GB.Enabled = true;
-                        CAN_TEST_GB.Enabled = false;
-                    }
-                }
-                //can
-                else
-                {
-                    string selectedText = UartComportCombobox.SelectedItem.ToString();
-                    COMM_MODE_GB.Enabled = false;
-                    BAUD_GB.Enabled = false;
-                    UART_COM_GB.Enabled = false;
-                    SW_UPD_GB.Enabled = false;
-                    TEST_GB.Enabled = false;
-                    UART_TEST_GB.Enabled = false;
-                    CAN_TEST_GB.Enabled = false;
-                    if (Enum.TryParse(selectedText, out PcanChannel selectedChannel))
-                    {
-                        CanbusClass.channel = selectedChannel;
-                    }
-                    if (CanbusClass.CanConnect(CanbusClass.channel, BaudCombobox.Text))
-                    {
-                        CanbusClass.BOOT_ID = 0x5166 + Convert.ToUInt32(SYSTEMIDv2.Text);
-                        CanbusClass.BOOT_WAKE_ID = 0x5165 + Convert.ToUInt32(SYSTEMIDv2.Text);
-                        ConnectButton.Text = "Trying to Connect Device";
-                        Thread.Sleep(100);
-                        CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
-                        if (CanbusClass.WaitForMessage(CanbusClass.channel, CanbusClass.START_BL_RX, 1000) == CanMessageState.OK)
-                        {
-                            /*if(connect_click_state)
-                            {
-                                return;
-                            }*/
-                            ConnectButton.Text = "Disconnect from Device";
-                            CanbusClass.IsCanOpen = true;
-                            COMM_MODE_GB.Enabled = false;
-                            BAUD_GB.Enabled = false;
-                            UART_COM_GB.Enabled = false;
-                            SW_UPD_GB.Enabled = true;
-                            TEST_GB.Enabled = testwindow;
-                            UART_TEST_GB.Enabled = true;
-                            CAN_TEST_GB.Enabled = true;
-                            MessageBox.Show("Bootmode Activated!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                            GeneralProgramClass.ListenInfinite = false;
-                            InfCanTask = new Thread(InfiniteListenLoop);
-                            InfCanTask.Start();
-                        }
-                        else
-                        {
-                            if (CanbusClass.CanDisconnect(CanbusClass.channel))
-                            {
-                                GeneralProgramClass.ListenInfinite = false;
-                                CanbusClass.IsCanOpen = false;
-                                ConnectButton.Text = "Connect to Device";
-                                COMM_MODE_GB.Enabled = true;
-                                BAUD_GB.Enabled = true;
-                                UART_COM_GB.Enabled = true;
-                                SW_UPD_GB.Enabled = false;
-                                TEST_GB.Enabled = false;
-                                UART_TEST_GB.Enabled = false;
-                                CAN_TEST_GB.Enabled = false;
-                            }
-                        }
-                    }
-                }
-            }
-            else
-            {
-                //uart disc
-                if (UartRadio.Checked)
-                {
-                    if (UartClass.UartDisconnect(UartClass.SerialCom))
-                    {
-                        ConnectButton.Text = "Connect to Device";
-                        COMM_MODE_GB.Enabled = true;
-                        BAUD_GB.Enabled = true;
-                        UART_COM_GB.Enabled = true;
-                        SW_UPD_GB.Enabled = false;
-                        TEST_GB.Enabled = false;
-                        UART_TEST_GB.Enabled = false;
-                        CAN_TEST_GB.Enabled = false;
-                    }
-                }
-                //can disc
-                else
-                {
-                    if (CanbusClass.CanDisconnect(CanbusClass.channel))
-                    {
-                        GeneralProgramClass.ListenInfinite = false;
-                        CanbusClass.IsCanOpen = false;
-                        ConnectButton.Text = "Connect to Device";
-                        COMM_MODE_GB.Enabled = true;
-                        BAUD_GB.Enabled = true;
-                        UART_COM_GB.Enabled = true;
-                        SW_UPD_GB.Enabled = false;
-                        TEST_GB.Enabled = false;
-                        UART_TEST_GB.Enabled = false;
-                        CAN_TEST_GB.Enabled = false;
-                    }
-                }
-            }
-        }
+        
 
         void InfiniteListenLoop()
         {
@@ -351,6 +235,140 @@ namespace NXPBugger
             }
         }
 
+        void Connect_Action()
+        {
+            if (ConnectButton.Text == "Connect to Device")
+            {
+                if (UartRadio.Checked)
+                {
+                    ConnectViaUart();
+                }
+                else
+                {
+                    ConnectViaCan();
+                }
+            }
+            else
+            {
+                if (UartRadio.Checked)
+                {
+                    DisconnectUart();
+                }
+                else
+                {
+                    DisconnectCan();
+                }
+            }
+        }
+
+        void ConnectViaUart()
+        {
+            if (UartClass.UartConnect(UartClass.SerialCom, UartComportCombobox.Text, Convert.ToInt32(BaudCombobox.Text)))
+            {
+                SetGuiStateConnected();
+                CAN_TEST_GB.Enabled = false;
+            }
+        }
+
+        void ConnectViaCan()
+        {
+            string selectedText = UartComportCombobox.SelectedItem.ToString();
+            DisableAllControlsTemporarily();
+
+            if (Enum.TryParse(selectedText, out PcanChannel selectedChannel))
+            {
+                CanbusClass.channel = selectedChannel;
+            }
+
+            if (CanbusClass.CanConnect(CanbusClass.channel, BaudCombobox.Text))
+            {
+                CanbusClass.BOOT_ID = 0x5166 + Convert.ToUInt32(SYSTEMIDv2.Text);
+                CanbusClass.BOOT_WAKE_ID = 0x5165 + Convert.ToUInt32(SYSTEMIDv2.Text);
+
+                ConnectButton.Text = "Trying to Connect Device";
+                Thread.Sleep(100);
+                CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
+
+                if (CanbusClass.WaitForMessage(CanbusClass.channel, CanbusClass.START_BL_RX, 1000) == CanMessageState.OK)
+                {
+                    ConnectButton.Text = "Disconnect from Device";
+                    CanbusClass.IsCanOpen = true;
+                    SetGuiStateConnected();
+                    CAN_TEST_GB.Enabled = true;
+                    MessageBox.Show("Bootmode Activated!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    GeneralProgramClass.ListenInfinite = false;
+                    InfCanTask = new Thread(InfiniteListenLoop);
+                    InfCanTask.Start();
+                }
+                else
+                {
+                    DisconnectCan(); // Retry-safe
+                }
+            }
+            else
+            {
+                DisconnectCan(); // Connection failed
+            }
+        }
+
+        void DisconnectUart()
+        {
+            if (UartClass.UartDisconnect(UartClass.SerialCom))
+            {
+                SetGuiStateDisconnected();
+            }
+        }
+
+        void DisconnectCan()
+        {
+            if (CanbusClass.CanDisconnect(CanbusClass.channel))
+            {
+                GeneralProgramClass.ListenInfinite = false;
+                CanbusClass.IsCanOpen = false;
+                SetGuiStateDisconnected();
+            }
+            else
+            {
+                GeneralProgramClass.ListenInfinite = false;
+                CanbusClass.IsCanOpen = false;
+                SetGuiStateDisconnected();
+            }
+        }
+
+        void SetGuiStateConnected()
+        {
+            ConnectButton.Text = "Disconnect from Device";
+            COMM_MODE_GB.Enabled = false;
+            BAUD_GB.Enabled = false;
+            UART_COM_GB.Enabled = false;
+            SW_UPD_GB.Enabled = true;
+            TEST_GB.Enabled = testwindow;
+            UART_TEST_GB.Enabled = true;
+        }
+
+        void SetGuiStateDisconnected()
+        {
+            ConnectButton.Text = "Connect to Device";
+            COMM_MODE_GB.Enabled = true;
+            BAUD_GB.Enabled = true;
+            UART_COM_GB.Enabled = true;
+            SW_UPD_GB.Enabled = false;
+            TEST_GB.Enabled = false;
+            UART_TEST_GB.Enabled = false;
+            CAN_TEST_GB.Enabled = false;
+        }
+
+        void DisableAllControlsTemporarily()
+        {
+            COMM_MODE_GB.Enabled = false;
+            BAUD_GB.Enabled = false;
+            UART_COM_GB.Enabled = false;
+            SW_UPD_GB.Enabled = false;
+            TEST_GB.Enabled = false;
+            UART_TEST_GB.Enabled = false;
+            CAN_TEST_GB.Enabled = false;
+        }
 
         Thread TH_CONNECT;
         bool connect_click_state = false;
