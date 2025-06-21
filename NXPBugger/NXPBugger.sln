@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NXPBugger", "NXPBugger\NXPBugger.csproj", "{2DF25EB9-6AD7-476C-96E2-E48454234BE4}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NXPBugger_Setup", "..\Setup\NXPBugger_Setup\NXPBugger_Setup.vdproj", "{F78D3B8A-FFBC-4CD7-BBCC-39EABCAD63D7}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "NXPBugger_Setup", "..\Setup\NXPBugger_Setup\NXPBugger_Setup.vdproj", "{DD98797E-D09B-426D-C942-A72945307C54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{2DF25EB9-6AD7-476C-96E2-E48454234BE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DF25EB9-6AD7-476C-96E2-E48454234BE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DF25EB9-6AD7-476C-96E2-E48454234BE4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F78D3B8A-FFBC-4CD7-BBCC-39EABCAD63D7}.Debug|Any CPU.ActiveCfg = Debug
-		{F78D3B8A-FFBC-4CD7-BBCC-39EABCAD63D7}.Release|Any CPU.ActiveCfg = Release
+		{DD98797E-D09B-426D-C942-A72945307C54}.Debug|Any CPU.ActiveCfg = Debug
+		{DD98797E-D09B-426D-C942-A72945307C54}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
