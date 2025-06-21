@@ -1,5 +1,10 @@
 ## Revision History
 
+### NXPBugger v1.0.4
+- Fixed one problem about read config default values.
+- See [Issue #4](https://github.com/hakimmc/NXPBugger/issues/4).
+- 21.06.2025
+
 ### NXPBugger v1.0.3
 - Fixed two new problems.
 - See [Issue #2](https://github.com/hakimmc/NXPBugger/issues/2) and [Issue #3](https://github.com/hakimmc/NXPBugger/issues/3).
