@@ -291,7 +291,7 @@ namespace NXPBugger
 
                 if (CanbusClass.WaitForMessage(CanbusClass.channel, CanbusClass.START_BL_RX, 1000) == CanMessageState.OK)
                 {
-                    ConnectButton.Text = "Disconnect from Device";
+                    ConnectButton.Text = "Disconnect from Device (Run)";
                     CanbusClass.IsCanOpen = true;
                     SetGuiStateConnected();
                     CAN_TEST_GB.Enabled = true;
@@ -322,6 +322,7 @@ namespace NXPBugger
 
         void DisconnectCan()
         {
+            //CanbusClass.JumpToApp();
             if (CanbusClass.CanDisconnect(CanbusClass.channel))
             {
                 GeneralProgramClass.ListenInfinite = false;
@@ -338,7 +339,7 @@ namespace NXPBugger
 
         void SetGuiStateConnected()
         {
-            ConnectButton.Text = "Disconnect from Device";
+            ConnectButton.Text = "Disconnect from Device (Run)";
             COMM_MODE_GB.Enabled = false;
             BAUD_GB.Enabled = false;
             UART_COM_GB.Enabled = false;

@@ -43,7 +43,7 @@ namespace NXPBugger
             sfd.Filter = "Config File|*.cfg";
             sfd.FilterIndex = 1;
             sfd.InitialDirectory = GeneralProgramClass.DefaultFileLocation;
-            sfd.FileName = $"NXP_SW_VER_{MAJORVERSION.Value}_{MINORVERSION.Value}_{BUGFIXVERSION.Value}_COMPANY_{companynum.Value}_USER_{usernamenum.Value}_CFG_FILE";
+            sfd.FileName = $"NXP_SW_v{MAJORVERSION.Value}.{MINORVERSION.Value}.{BUGFIXVERSION.Value}.{companynum.Value}.{usernamenum.Value}_CFG_FILE";
             if (DialogResult.OK == sfd.ShowDialog())
             {
                 GeneralProgramClass.DefaultFileLocation = sfd.FileName;
@@ -95,7 +95,7 @@ namespace NXPBugger
                 sfd.Filter = "Application File |*.cwa";
                 sfd.FilterIndex = 1;
                 sfd.InitialDirectory = GeneralProgramClass.DefaultFileLocation;
-                sfd.FileName = $"NXP_SW_VER_{MAJORVERSION.Value}_{MINORVERSION.Value}_{BUGFIXVERSION.Value}_COMPANY_{companynum.Value}_USER_{usernamenum.Value}_CWA_FILE";
+                sfd.FileName = $"NXP_SW_v{MAJORVERSION.Value}.{MINORVERSION.Value}.{BUGFIXVERSION.Value}.{companynum.Value}.{usernamenum.Value}_CWA_FILE";
                 if (DialogResult.OK == sfd.ShowDialog())
                 {
                     GeneralProgramClass.DefaultFileLocation = sfd.FileName;
@@ -260,6 +260,7 @@ namespace NXPBugger
 
         private void Config_Creator_FormClosing(object sender, FormClosingEventArgs e)
         {
+            GeneralProgramClass.FormActive_CFG_Creator = false;
         }
     }
 }

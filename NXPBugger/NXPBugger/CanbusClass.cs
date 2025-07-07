@@ -38,6 +38,10 @@ namespace NXPBugger
         private static readonly byte[] NEXT_MSG = Encoding.ASCII.GetBytes("!OTTONXT");
         private static readonly byte[] END_MSG = Encoding.ASCII.GetBytes("!OTTOJMP");
 
+        public static void JumpToApp()
+        {
+            CanbusClass.CanTransmit(channel, BOOT_ID, BOOT_MSGTYP, BOOT_DLC, END_MSG);
+        }
         public static bool CanConnect(PcanChannel PcanChannel, string BaudRate)
         {
             try
@@ -219,7 +223,7 @@ namespace NXPBugger
                 TaskbarManager.Instance.SetProgressState(TaskbarProgressBarState.NoProgress);
             }
         }
-        public static CanMessageState WaitForMessage(PcanChannel PcanChannel, byte[] expectedMsg, uint Timeout)
+        /*public static CanMessageState WaitForMessage(PcanChannel PcanChannel, byte[] expectedMsg, uint Timeout)
         {
             if (!CanReceive(PcanChannel, BOOT_ID, BOOT_MSGTYP, BOOT_DLC, BOOT_RECV_BYTE, Timeout, true))
             {
@@ -232,6 +236,31 @@ namespace NXPBugger
             else
             {
                 return CanMessageState.ERROR;
+            }
+        }*/
+        public static CanMessageState WaitForMessage(PcanChannel PcanChannel, byte[] expectedMsg, uint Timeout)
+        {
+            if (expectedMsg == null)
+            {
+                return CanMessageState.OK;
+            }
+            else
+            {
+                var stopwatch = System.Diagnostics.Stopwatch.StartNew();
+
+                while (stopwatch.ElapsedMilliseconds < Timeout + 5000) // 5 saniye sınırı
+                {
+                    if (!CanReceive(PcanChannel, BOOT_ID, BOOT_MSGTYP, BOOT_DLC, BOOT_RECV_BYTE, Timeout, true))
+                    {
+                        return CanMessageState.TIMEOUT;
+                    }
+                    if (Compare(BOOT_RECV_BYTE, expectedMsg, 8))
+                    {
+                        return CanMessageState.OK;
+                    }
+                }
+
+                return CanMessageState.TIMEOUT;
             }
         }
 

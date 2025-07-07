@@ -187,14 +187,15 @@ namespace NXPBugger
 
         public static readonly byte[] READ_CFG_COMMAND_TX = Encoding.ASCII.GetBytes("READCFG0");
         public static readonly byte[] READ_CFG_COMMAND_RX = Encoding.ASCII.GetBytes("!CFGWRGT");
+        byte[] temp_cfg_array = new byte[8];
+        byte[] cfg_array = new byte[48];
         private void ReadCfgFromDevice_Click(object sender, EventArgs e)
         {
             READ_CFG_COMMAND_TX[7] = (byte)(0);
             CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, READ_CFG_COMMAND_TX);
             /*if (CanbusClass.WaitForMessage(CanbusClass.channel, READ_CFG_COMMAND_RX, 5000) == CanMessageState.OK)
             {*/
-                byte[] temp_cfg_array = new byte[8];
-                byte[] cfg_array = new byte[48];
+                
                 for(int i = 0; i < 6; i++)
                 {
                     Thread.Sleep(100);
@@ -211,6 +212,10 @@ namespace NXPBugger
                     CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, READ_CFG_COMMAND_TX);
                 }
                 ReadAndReplaceConfigFile(cfg_array);
+            for (int i = 0; i < 8; i++)
+            {
+                cfg_array[i] = 0;
+            }
             /*}
             else
             {
@@ -224,7 +229,7 @@ namespace NXPBugger
             sfd.Filter = "Config File|*.cfg";
             sfd.FilterIndex = 1;
             sfd.InitialDirectory = GeneralProgramClass.DefaultFileLocation;
-            sfd.FileName = $"NXP_SW_VER_{MAJORVERSION.Value}_{MINORVERSION.Value}_{BUGFIXVERSION.Value}_COMPANY_{companynum.Value}_USER_{usernamenum.Value}_CFG_FILE";
+            sfd.FileName = $"NXP_SW_v{MAJORVERSION.Value}.{MINORVERSION.Value}.{BUGFIXVERSION.Value}.{companynum.Value}.{usernamenum.Value}_CWA_FILE";
             if (DialogResult.OK == sfd.ShowDialog())
             {
                 GeneralProgramClass.DefaultFileLocation = sfd.FileName;
