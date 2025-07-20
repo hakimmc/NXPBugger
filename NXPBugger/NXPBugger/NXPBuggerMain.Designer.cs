@@ -787,7 +787,7 @@
             MaximizeBox = false;
             Name = "NXPBuggerv1";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "NXPBugger";
+            Text = "NXPBugger v";
             FormClosing += NXPBuggerv1_FormClosing;
             Load += NXPBuggerv1_Load;
             MouseDoubleClick += NXPBuggerv1_MouseDoubleClick;

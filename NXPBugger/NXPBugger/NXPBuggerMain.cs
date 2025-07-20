@@ -100,8 +100,10 @@ namespace NXPBugger
             SYSTEMIDv2.Text = data[26];
         }
         string file = "set.csv";
+        string sw_ver = "1.0.5";
         private void NXPBuggerv1_Load(object sender, EventArgs e)
         {
+            this.Text += sw_ver;
             Control.CheckForIllegalCrossThreadCalls = false;
             Sw_UpdateStartButton.Enabled = false;
             SwUpdate_ProgressBar.Enabled = false;
