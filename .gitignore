@@ -1,4 +1,8 @@
-Setup\NXPBugger_Setup\Debug
-Setup\NXPBugger_Setup\Release
-NXPBugger\NXPBugger\obj
-NXPBugger\NXPBugger\bin
+**/bin/
+**/obj/
+**/Debug/
+**/Release/
+Setup/NXPBugger_Setup/Debug
+Setup/NXPBugger_Setup/Release
+NXPBugger/NXPBugger/obj
+NXPBugger/NXPBugger/bin
