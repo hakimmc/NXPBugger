@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\NXP OttoBugger",
-    "\\NXP OttoBugger\\NXP OttoBugger"
+    "\\NXPBugger"
   ],
-  "SelectedNode": "\\NXP OttoBugger\\NXP OttoBugger\\CanbusClass.cs",
+  "SelectedNode": "\\NXPBugger\\NXPBugger.sln",
   "PreviewInSolutionExplorer": false
 }
