@@ -7,23 +7,23 @@
       "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\user\\source\\repos\\hakimmc\\nxpbugger\\nxpbugger\\nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\user\\source\\repos\\hakimmc\\nxpbugger\\nxpbugger\\nxpbugger\\canbusclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\canbusclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\nxpbuggermain.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\user\\source\\repos\\hakimmc\\nxpbugger\\nxpbugger\\nxpbugger\\config reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\config reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\user\\source\\repos\\hakimmc\\nxpbugger\\nxpbugger\\nxpbugger\\config reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\nxpbugger\\config reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\config reader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|c:\\users\\user\\source\\repos\\hakimmc\\nxpbugger\\nxpbugger\\nxpbugger\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\nxpbugger\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{2DF25EB9-6AD7-476C-96E2-E48454234BE4}|NXPBugger\\NXPBugger.csproj|solutionrelative:nxpbugger\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -54,13 +54,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "CanbusClass.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\CanbusClass.cs",
               "RelativeDocumentMoniker": "NXPBugger\\CanbusClass.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\CanbusClass.cs",
               "RelativeToolTip": "NXPBugger\\CanbusClass.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAASwHcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAqwCgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T11:16:28.835Z",
               "EditorCaption": ""
@@ -87,8 +87,7 @@
               "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\Config Reader.cs [Tasar\u0131m]",
               "RelativeToolTip": "NXPBugger\\Config Reader.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T11:16:16.424Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2025-09-13T11:16:16.424Z"
             },
             {
               "$type": "Document",
@@ -96,21 +95,21 @@
               "Title": "NXPBuggerMain.cs",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
               "RelativeDocumentMoniker": "NXPBugger\\NXPBuggerMain.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs*",
-              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
+              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs",
+              "ViewState": "AgIAAM4AAAAAAAAAAADwvyYBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T11:12:50.596Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "NXPBuggerMain.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
               "RelativeDocumentMoniker": "NXPBugger\\NXPBuggerMain.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs [Tasar\u0131m]*",
-              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs [Tasar\u0131m]*",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs [Tasar\u0131m]",
+              "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T11:12:03.38Z",
               "EditorCaption": " [Tasar\u0131m]"
@@ -124,8 +123,7 @@
               "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\LoginPage.cs [Tasar\u0131m]",
               "RelativeToolTip": "NXPBugger\\LoginPage.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T11:11:09.008Z",
-              "EditorCaption": " [Tasar\u0131m]"
+              "WhenOpened": "2025-09-13T11:11:09.008Z"
             }
           ]
         }

@@ -217,6 +217,7 @@ namespace NXPBugger
         }
         void ConnectViaCan()
         {
+            uint timeout = 119; // 2 min
             string selectedText = UartComportCombobox.SelectedItem.ToString();
             DisableAllControlsTemporarily();
 
@@ -232,9 +233,14 @@ namespace NXPBugger
 
                 ConnectButton.Text = "Trying to Connect Device";
                 Thread.Sleep(100);
+                //CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
                 CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
-
-                if (CanbusClass.WaitForMessage(CanbusClass.channel, CanbusClass.START_BL_RX, 1000) == CanMessageState.OK)
+                while (CanbusClass.WaitForMessage(CanbusClass.channel, CanbusClass.START_BL_RX, 1000) != CanMessageState.OK && timeout > 0)
+                {
+                    CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
+                    timeout--;
+                }
+                if (timeout>0)
                 {
                     ConnectButton.Text = "Disconnect from Device (Run)";
                     CanbusClass.IsCanOpen = true;
@@ -264,6 +270,7 @@ namespace NXPBugger
         }
         void DisconnectCan()
         {
+            CanbusClass.JumpToApp();
             //CanbusClass.JumpToApp();
             if (CanbusClass.CanDisconnect(CanbusClass.channel))
             {
