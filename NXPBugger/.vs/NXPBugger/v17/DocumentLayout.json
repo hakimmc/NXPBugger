@@ -60,7 +60,7 @@
               "RelativeDocumentMoniker": "NXPBugger\\CanbusClass.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\CanbusClass.cs",
               "RelativeToolTip": "NXPBugger\\CanbusClass.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAqwCgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAiwCYAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T11:16:28.835Z",
               "EditorCaption": ""
@@ -97,7 +97,7 @@
               "RelativeDocumentMoniker": "NXPBugger\\NXPBuggerMain.cs",
               "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\NXPBuggerMain.cs",
               "RelativeToolTip": "NXPBugger\\NXPBuggerMain.cs",
-              "ViewState": "AgIAAM4AAAAAAAAAAADwvwYBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAADgv2oAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-13T11:12:50.596Z",
               "EditorCaption": ""
@@ -117,13 +117,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LoginPage.cs [Tasar\u0131m]",
+              "Title": "LoginPage.cs [Design]",
               "DocumentMoniker": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\LoginPage.cs",
               "RelativeDocumentMoniker": "NXPBugger\\LoginPage.cs",
-              "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\LoginPage.cs [Tasar\u0131m]",
-              "RelativeToolTip": "NXPBugger\\LoginPage.cs [Tasar\u0131m]",
+              "ToolTip": "C:\\Users\\user\\source\\repos\\hakimmc\\NXPBugger\\NXPBugger\\NXPBugger\\LoginPage.cs [Design]",
+              "RelativeToolTip": "NXPBugger\\LoginPage.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-13T11:11:09.008Z"
+              "WhenOpened": "2025-09-13T11:11:09.008Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

@@ -37,7 +37,6 @@
             BaudCombobox = new ComboBox();
             ConnectButton = new Button();
             CFG_GB = new GroupBox();
-            OpenTest_Window_Button = new Button();
             UART_COM_GB = new GroupBox();
             UartComportCombobox = new ComboBox();
             select_file_button = new Button();
@@ -65,7 +64,7 @@
             // UartRadio
             // 
             UartRadio.AutoSize = true;
-            UartRadio.Location = new Point(6, 14);
+            UartRadio.Location = new Point(6, 16);
             UartRadio.Name = "UartRadio";
             UartRadio.Size = new Size(47, 19);
             UartRadio.TabIndex = 3;
@@ -80,20 +79,20 @@
             COMM_MODE_GB.Controls.Add(UartRadio);
             COMM_MODE_GB.Location = new Point(5, 22);
             COMM_MODE_GB.Name = "COMM_MODE_GB";
-            COMM_MODE_GB.Size = new Size(105, 41);
+            COMM_MODE_GB.Size = new Size(231, 41);
             COMM_MODE_GB.TabIndex = 4;
             COMM_MODE_GB.TabStop = false;
-            COMM_MODE_GB.Text = "Comm Mode";
+            COMM_MODE_GB.Text = "Communication Mode";
             // 
             // CanRadio
             // 
             CanRadio.AutoSize = true;
-            CanRadio.Location = new Point(53, 14);
+            CanRadio.Location = new Point(117, 16);
             CanRadio.Name = "CanRadio";
-            CanRadio.Size = new Size(46, 19);
+            CanRadio.Size = new Size(108, 19);
             CanRadio.TabIndex = 4;
             CanRadio.TabStop = true;
-            CanRadio.Text = "Can";
+            CanRadio.Text = "Canbus (PCAN)";
             CanRadio.UseVisualStyleBackColor = true;
             // 
             // BAUD_GB
@@ -127,7 +126,6 @@
             // 
             // CFG_GB
             // 
-            CFG_GB.Controls.Add(OpenTest_Window_Button);
             CFG_GB.Controls.Add(UART_COM_GB);
             CFG_GB.Controls.Add(ConnectButton);
             CFG_GB.Controls.Add(BAUD_GB);
@@ -138,16 +136,6 @@
             CFG_GB.TabIndex = 7;
             CFG_GB.TabStop = false;
             CFG_GB.Text = "Settings";
-            // 
-            // OpenTest_Window_Button
-            // 
-            OpenTest_Window_Button.Location = new Point(116, 31);
-            OpenTest_Window_Button.Name = "OpenTest_Window_Button";
-            OpenTest_Window_Button.Size = new Size(120, 28);
-            OpenTest_Window_Button.TabIndex = 7;
-            OpenTest_Window_Button.Text = "Close Test Window";
-            OpenTest_Window_Button.UseVisualStyleBackColor = true;
-            OpenTest_Window_Button.Click += OpenTest_Window_Button_Click;
             // 
             // UART_COM_GB
             // 
@@ -284,7 +272,6 @@
         public Label Sw_DuringTimeLabel;
         public GroupBox UART_COM_GB;
         public ComboBox UartComportCombobox;
-        public Button OpenTest_Window_Button;
         private ToolStripSplitButton toolStripSplitButton1;
         private ToolStripMenuItem readConfigToolStripMenuItem;
         private ToolStripComboBox SYSTEMID;

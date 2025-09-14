@@ -1,9 +1,12 @@
+using Microsoft.WindowsAPICodePack.Taskbar;
 using Peak.Can.Basic;
 using System.Diagnostics;
 using System.IO.Ports;
 using System.Security.Permissions;
+using System.Text;
+using System.Threading;
+using System.Threading.Channels;
 using static NXPBugger.GeneralProgramClass;
-using Microsoft.WindowsAPICodePack.Taskbar;
 
 namespace NXPBugger
 {
@@ -114,14 +117,12 @@ namespace NXPBugger
                 this.AutoSize = false;
                 //this.Size = new Size(270, 390);
                 testwindow = false;
-                OpenTest_Window_Button.Text = "Open Test Window";
             }
             else
             {
                 this.AutoSize = true;
                 //this.Size = new Size(650, 390);
                 testwindow = true;
-                OpenTest_Window_Button.Text = "Close Test Window";
             }
         }
         private void NXPBuggerv1_FormClosing(object sender, FormClosingEventArgs e)
@@ -148,6 +149,7 @@ namespace NXPBugger
                     $"{GeneralProgramClass.DefaultFileLocation}"
                     );
             }
+            Environment.Exit(0);
         }
         private void UartRadio_CheckedChanged(object sender, EventArgs e)
         {
@@ -204,6 +206,7 @@ namespace NXPBugger
                 }
                 else
                 {
+                    timeout = 0;
                     DisconnectCan();
                 }
             }
@@ -215,9 +218,9 @@ namespace NXPBugger
                 SetGuiStateConnected();
             }
         }
+        uint timeout = 119; // 2 min
         void ConnectViaCan()
         {
-            uint timeout = 119; // 2 min
             string selectedText = UartComportCombobox.SelectedItem.ToString();
             DisableAllControlsTemporarily();
 
@@ -240,7 +243,7 @@ namespace NXPBugger
                     CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, CanbusClass.START_BL_TX);
                     timeout--;
                 }
-                if (timeout>0)
+                if (timeout > 0)
                 {
                     ConnectButton.Text = "Disconnect from Device (Run)";
                     CanbusClass.IsCanOpen = true;
@@ -270,8 +273,7 @@ namespace NXPBugger
         }
         void DisconnectCan()
         {
-            CanbusClass.JumpToApp();
-            //CanbusClass.JumpToApp();
+            CanbusClass.CanTransmit(CanbusClass.channel, CanbusClass.BOOT_WAKE_ID, CanbusClass.BOOT_MSGTYP, CanbusClass.BOOT_DLC, Encoding.ASCII.GetBytes("!OTTOJMP"));
             if (CanbusClass.CanDisconnect(CanbusClass.channel))
             {
                 GeneralProgramClass.ListenInfinite = false;
