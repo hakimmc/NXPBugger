@@ -9,12 +9,12 @@ namespace NXPBugger
 {
     public partial class NXPBuggerv1 : Form
     {
-        bool testwindow = true;
+        bool testwindow = false;
         public NXPBuggerv1()
         {
             InitializeComponent();
         }
-
+        
         //string DefaultFileLocation;
         public bool flag = false;
         public int DoubleClickCounter = 0;
@@ -28,8 +28,8 @@ namespace NXPBugger
             }
             else if (CanRadio.Checked)
             {
-                CanbusClass.BOOT_ID = 0x5166 + Convert.ToUInt32(SYSTEMIDv2.Text);
-                CanbusClass.BOOT_WAKE_ID = 0x5165 + Convert.ToUInt32(SYSTEMIDv2.Text);
+                CanbusClass.BOOT_ID = 0x5166;
+                CanbusClass.BOOT_WAKE_ID = 0x5165;
                 CanbusClass.CanBootloaderStart(CanbusClass.channel, GeneralProgramClass.DefaultFileLocation, SwUpdate_ProgressBar, Sw_UpdateStartButton, Sw_DuringTimeLabel, ref KILL_SW_UPD_TH);
             }
         }
@@ -72,46 +72,20 @@ namespace NXPBugger
             }
             UartComportCombobox.Text = data[2];
             GeneralProgramClass.DefaultFileLocation = data[3];
-            CanDatasTXID.Text = data[4];
-            CanDatasTXDLC.Text = data[5];
-            CanDatasTXD1.Text = data[6];
-            CanDatasTXD2.Text = data[7];
-            CanDatasTXD3.Text = data[8];
-            CanDatasTXD4.Text = data[9];
-            CanDatasTXD5.Text = data[10];
-            CanDatasTXD6.Text = data[11];
-            CanDatasTXD7.Text = data[12];
-            CanDatasTXD8.Text = data[13];
 
-            CanDatasRXID.Text = data[14];
-            CanDatasRXDLC.Text = data[15];
-            CanDatasRXD1.Text = data[16];
-            CanDatasRXD2.Text = data[17];
-            CanDatasRXD3.Text = data[18];
-            CanDatasRXD4.Text = data[19];
-            CanDatasRXD5.Text = data[20];
-            CanDatasRXD6.Text = data[21];
-            CanDatasRXD7.Text = data[22];
-            CanDatasRXD8.Text = data[23];
-
-            UartDatasTX.Text = data[24];
-            UartDatasRX.Text = data[25];
-
-            SYSTEMIDv2.Text = data[26];
         }
         string file = "set.csv";
-        string sw_ver = "1.0.5";
+        string sw_ver = "1.1.0";
         private void NXPBuggerv1_Load(object sender, EventArgs e)
         {
+            this.Size = new Size(270, 390);
             this.Text += sw_ver;
             Control.CheckForIllegalCrossThreadCalls = false;
             Sw_UpdateStartButton.Enabled = false;
             SwUpdate_ProgressBar.Enabled = false;
             UartClass.SerialCom = new SerialPort();
             UartComportCombobox.Items.AddRange(SerialPort.GetPortNames());
-            //this.Size = new Size(650, 390);
             SW_UPD_GB.Enabled = false;
-            TEST_GB.Enabled = false;
             try
             {
                 if (!File.Exists(file))
@@ -133,24 +107,10 @@ namespace NXPBugger
             {
                 MessageBox.Show(EX.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            CanbusClass.CanTXMessage = new PcanMessage();
         }
         private void OpenTest_Window_Button_Click(object sender, EventArgs e)
         {
-            if (testwindow)
-            {
-                this.AutoSize = false;
-                //this.Size = new Size(270, 390);
-                testwindow = false;
-                OpenTest_Window_Button.Text = "Open Test Window";
-            }
-            else
-            {
-                this.AutoSize = true;
-                //this.Size = new Size(650, 390);
-                testwindow = true;
-                OpenTest_Window_Button.Text = "Close Test Window";
-            }
+
         }
         private void NXPBuggerv1_FormClosing(object sender, FormClosingEventArgs e)
         {
@@ -166,38 +126,6 @@ namespace NXPBugger
             if (CanbusClass.IsCanOpen)
             {
                 CanbusClass.CanDisconnect(CanbusClass.channel);
-            }
-            using (StreamWriter writer = new StreamWriter(file))
-            {
-                string commod = UartRadio.Checked == true ? "UART" : "CAN";
-                writer.Write($"{commod}," +
-                    $"{BaudCombobox.Text}," +
-                    $"{UartComportCombobox.Text}," +
-                    $"{GeneralProgramClass.DefaultFileLocation}," +
-                    $"{CanDatasTXID.Text}," +
-                    $"{CanDatasTXDLC.Text}," +
-                    $"{CanDatasTXD1.Text}," +
-                    $"{CanDatasTXD2.Text}," +
-                    $"{CanDatasTXD3.Text}," +
-                    $"{CanDatasTXD4.Text}," +
-                    $"{CanDatasTXD5.Text}," +
-                    $"{CanDatasTXD6.Text}," +
-                    $"{CanDatasTXD7.Text}," +
-                    $"{CanDatasTXD8.Text}," +
-                    $"{CanDatasRXID.Text}," +
-                    $"{CanDatasRXDLC.Text}," +
-                    $"{CanDatasRXD1.Text}," +
-                    $"{CanDatasRXD2.Text}," +
-                    $"{CanDatasRXD3.Text}," +
-                    $"{CanDatasRXD4.Text}," +
-                    $"{CanDatasRXD5.Text}," +
-                    $"{CanDatasRXD6.Text}," +
-                    $"{CanDatasRXD7.Text}," +
-                    $"{CanDatasRXD8.Text}," +
-                    $"{UartDatasTX.Text}," +
-                    $"{UartDatasRX.Text}," +
-                    $"{SYSTEMIDv2.Text}"
-                    );
             }
         }
         private void UartRadio_CheckedChanged(object sender, EventArgs e)
@@ -268,7 +196,6 @@ namespace NXPBugger
             if (UartClass.UartConnect(UartClass.SerialCom, UartComportCombobox.Text, Convert.ToInt32(BaudCombobox.Text)))
             {
                 SetGuiStateConnected();
-                CAN_TEST_GB.Enabled = false;
             }
         }
 
@@ -284,8 +211,8 @@ namespace NXPBugger
 
             if (CanbusClass.CanConnect(CanbusClass.channel, BaudCombobox.Text))
             {
-                CanbusClass.BOOT_ID = 0x5166 + Convert.ToUInt32(SYSTEMIDv2.Text);
-                CanbusClass.BOOT_WAKE_ID = 0x5165 + Convert.ToUInt32(SYSTEMIDv2.Text);
+                CanbusClass.BOOT_ID = 0x5166;
+                CanbusClass.BOOT_WAKE_ID = 0x5165;
 
                 ConnectButton.Text = "Trying to Connect Device";
                 Thread.Sleep(100);
@@ -296,8 +223,8 @@ namespace NXPBugger
                     ConnectButton.Text = "Disconnect from Device (Run)";
                     CanbusClass.IsCanOpen = true;
                     SetGuiStateConnected();
-                    CAN_TEST_GB.Enabled = true;
                     MessageBox.Show("Bootmode Activated!", "Info", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    SW_UPD_GB.Enabled = true;
 
                     GeneralProgramClass.ListenInfinite = false;
                     InfCanTask = new Thread(InfiniteListenLoop);
@@ -345,9 +272,7 @@ namespace NXPBugger
             COMM_MODE_GB.Enabled = false;
             BAUD_GB.Enabled = false;
             UART_COM_GB.Enabled = false;
-            SW_UPD_GB.Enabled = true;
-            TEST_GB.Enabled = testwindow;
-            UART_TEST_GB.Enabled = true;
+            SW_UPD_GB.Enabled = false;
         }
 
         void SetGuiStateDisconnected()
@@ -357,9 +282,6 @@ namespace NXPBugger
             BAUD_GB.Enabled = true;
             UART_COM_GB.Enabled = true;
             SW_UPD_GB.Enabled = false;
-            TEST_GB.Enabled = false;
-            UART_TEST_GB.Enabled = false;
-            CAN_TEST_GB.Enabled = false;
         }
 
         void DisableAllControlsTemporarily()
@@ -368,9 +290,6 @@ namespace NXPBugger
             BAUD_GB.Enabled = false;
             UART_COM_GB.Enabled = false;
             SW_UPD_GB.Enabled = false;
-            TEST_GB.Enabled = false;
-            UART_TEST_GB.Enabled = false;
-            CAN_TEST_GB.Enabled = false;
         }
 
         Thread TH_CONNECT;
@@ -398,7 +317,7 @@ namespace NXPBugger
         private void select_file_button_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Filter = "Application File |*.cwa| Config File|*.cfg";
+            ofd.Filter = "Application File |*.bin| Config File|*.cfg";
             ofd.FilterIndex = 1;
             ofd.InitialDirectory = GeneralProgramClass.DefaultFileLocation;
             if (DialogResult.OK == ofd.ShowDialog())
@@ -407,7 +326,7 @@ namespace NXPBugger
                 filename_label.Text = "Filename : " + ofd.SafeFileName;
                 Sw_UpdateStartButton.Enabled = true;
                 SwUpdate_ProgressBar.Maximum = Convert.ToInt32((new FileInfo(ofd.FileName).Length));
-                if (filename_label.Text.EndsWith(".cwa"))
+                if (filename_label.Text.EndsWith(".bin"))
                 {
                     GeneralProgramClass.ModeForUpload = GeneralProgramClass.UploadMode.PROGRAM;
                 }
@@ -423,91 +342,7 @@ namespace NXPBugger
             SW_UPD_TH = new Thread(StartUpgradeSW);
             SW_UPD_TH.Start();
         }
-        private void CanDatas_TextChanged(object sender, EventArgs e)
-        {
-            TextBox textBox = sender as TextBox;
-            if (textBox.Text == string.Empty)
-            {
-                textBox.Text = "0";
-            }
-            if (textBox != null)
-            {
-                string text = textBox.Text.ToUpper();
-                string filteredText = new string(text.Where(c => "0123456789ABCDEF".Contains(c)).ToArray());
-                if (text != filteredText)
-                {
-                    textBox.Text = filteredText;
-                    textBox.SelectionStart = textBox.Text.Length;
-                }
-            }
-            if (textBox == CanDatasTXDLC)
-            {
-
-                if (int.Parse(CanDatasTXDLC.Text, System.Globalization.NumberStyles.HexNumber) > 8)
-                {
-                    CanDatasTXDLC.Text = "8";
-                }
-                else if (int.Parse(CanDatasTXDLC.Text, System.Globalization.NumberStyles.HexNumber) < 1)
-                {
-                    CanDatasTXDLC.Text = "1";
-                }
-            }
-            if (textBox == CanDatasRXDLC)
-            {
-                if (int.Parse(CanDatasRXDLC.Text, System.Globalization.NumberStyles.HexNumber) > 8)
-                {
-                    CanDatasRXDLC.Text = "8";
-                }
-                else if (int.Parse(CanDatasRXDLC.Text, System.Globalization.NumberStyles.HexNumber) < 1)
-                {
-                    CanDatasRXDLC.Text = "1";
-                }
-            }
-
-            if (textBox == CanDatasTXID)
-            {
-                if (int.Parse(CanDatasTXID.Text, System.Globalization.NumberStyles.HexNumber) > 0x20000000)
-                {
-                    CanDatasTXID.Text = "20000000";
-                }
-                else if (int.Parse(CanDatasTXID.Text, System.Globalization.NumberStyles.HexNumber) < 1)
-                {
-                    CanDatasTXID.Text = "1";
-                }
-            }
-            if (textBox == CanDatasRXID)
-            {
-                if (int.Parse(CanDatasRXID.Text, System.Globalization.NumberStyles.HexNumber) > 0x20000000)
-                {
-                    CanDatasRXID.Text = "20000000";
-                }
-                else if (int.Parse(CanDatasRXID.Text, System.Globalization.NumberStyles.HexNumber) < 1)
-                {
-                    CanDatasRXID.Text = "1";
-                }
-            }
-        }
-        private void SendData_Click(object sender, EventArgs e)
-        {
-            if (UartRadio.Checked)
-            {
-                UartClass.Serial_Transmit(UartClass.SerialCom, UartDatasTX.Text);
-            }
-            else
-            {
-                uint ID = uint.Parse(CanDatasTXID.Text, System.Globalization.NumberStyles.HexNumber);
-                byte[] Data = new byte[8];
-                Data[0] = byte.Parse(CanDatasTXD1.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[1] = byte.Parse(CanDatasTXD2.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[2] = byte.Parse(CanDatasTXD3.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[3] = byte.Parse(CanDatasTXD4.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[4] = byte.Parse(CanDatasTXD5.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[5] = byte.Parse(CanDatasTXD6.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[6] = byte.Parse(CanDatasTXD7.Text, System.Globalization.NumberStyles.HexNumber);
-                Data[7] = byte.Parse(CanDatasTXD8.Text, System.Globalization.NumberStyles.HexNumber);
-                CanbusClass.CanTransmit(CanbusClass.channel, ID, ID > 2047 ? MessageType.Extended : MessageType.Standard, Convert.ToUInt32(CanDatasTXDLC.Text), Data);
-            }
-        }
+        
 
         private void UartComportCombobox_Click(object sender, EventArgs e)
         {
@@ -579,19 +414,6 @@ namespace NXPBugger
             {
                 SYSTEMIDv2.Text = 0.ToString();
             }*/
-        }
-
-        private void SYSTEMIDv2_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-                SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) > 255 ? 255.ToString() : Convert.ToUInt32(SYSTEMIDv2.Text).ToString();
-                SYSTEMIDv2.Text = Convert.ToUInt32(SYSTEMIDv2.Text) < 0 ? 0.ToString() : Convert.ToUInt32(SYSTEMIDv2.Text).ToString();
-            }
-            catch
-            {
-                SYSTEMIDv2.Text = 0.ToString();
-            }
         }
     }
 }

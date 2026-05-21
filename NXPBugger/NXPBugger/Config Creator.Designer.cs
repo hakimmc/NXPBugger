@@ -57,7 +57,6 @@
             label11 = new Label();
             MAJORVERSION = new NumericUpDown();
             label13 = new Label();
-            AssembleBinFile = new Button();
             GenerateCfg = new Button();
             ReadCfg = new Button();
             groupBox4 = new GroupBox();
@@ -356,7 +355,7 @@
             BUGFIXVERSION.Name = "BUGFIXVERSION";
             BUGFIXVERSION.Size = new Size(99, 23);
             BUGFIXVERSION.TabIndex = 9;
-            BUGFIXVERSION.Value = new decimal(new int[] { 3, 0, 0, 0 });
+            BUGFIXVERSION.Value = new decimal(new int[] { 2, 0, 0, 0 });
             // 
             // label14
             // 
@@ -392,7 +391,7 @@
             MAJORVERSION.Name = "MAJORVERSION";
             MAJORVERSION.Size = new Size(99, 23);
             MAJORVERSION.TabIndex = 7;
-            MAJORVERSION.Value = new decimal(new int[] { 1, 0, 0, 0 });
+            MAJORVERSION.Value = new decimal(new int[] { 4, 0, 0, 0 });
             // 
             // label13
             // 
@@ -403,21 +402,11 @@
             label13.TabIndex = 3;
             label13.Text = "MAJOR VER         :";
             // 
-            // AssembleBinFile
-            // 
-            AssembleBinFile.Location = new Point(468, 245);
-            AssembleBinFile.Name = "AssembleBinFile";
-            AssembleBinFile.Size = new Size(463, 23);
-            AssembleBinFile.TabIndex = 11;
-            AssembleBinFile.Text = "Assemble App File";
-            AssembleBinFile.UseVisualStyleBackColor = true;
-            AssembleBinFile.Click += AssembleBinFile_Click;
-            // 
             // GenerateCfg
             // 
-            GenerateCfg.Location = new Point(233, 245);
+            GenerateCfg.Location = new Point(468, 245);
             GenerateCfg.Name = "GenerateCfg";
-            GenerateCfg.Size = new Size(229, 23);
+            GenerateCfg.Size = new Size(463, 23);
             GenerateCfg.TabIndex = 12;
             GenerateCfg.Text = "Generate Cfg File";
             GenerateCfg.UseVisualStyleBackColor = true;
@@ -427,7 +416,7 @@
             // 
             ReadCfg.Location = new Point(16, 245);
             ReadCfg.Name = "ReadCfg";
-            ReadCfg.Size = new Size(211, 23);
+            ReadCfg.Size = new Size(446, 23);
             ReadCfg.TabIndex = 13;
             ReadCfg.Text = "Read Cfg File";
             ReadCfg.UseVisualStyleBackColor = true;
@@ -454,11 +443,9 @@
             // 
             DAISYCHAINCOUNT.Location = new Point(112, 86);
             DAISYCHAINCOUNT.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
-            DAISYCHAINCOUNT.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             DAISYCHAINCOUNT.Name = "DAISYCHAINCOUNT";
             DAISYCHAINCOUNT.Size = new Size(99, 23);
             DAISYCHAINCOUNT.TabIndex = 13;
-            DAISYCHAINCOUNT.Value = new decimal(new int[] { 2, 0, 0, 0 });
             // 
             // label18
             // 
@@ -473,11 +460,9 @@
             // 
             PARALLELCELLCOUNT.Location = new Point(112, 64);
             PARALLELCELLCOUNT.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
-            PARALLELCELLCOUNT.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             PARALLELCELLCOUNT.Name = "PARALLELCELLCOUNT";
             PARALLELCELLCOUNT.Size = new Size(99, 23);
             PARALLELCELLCOUNT.TabIndex = 12;
-            PARALLELCELLCOUNT.Value = new decimal(new int[] { 2, 0, 0, 0 });
             // 
             // label5
             // 
@@ -492,11 +477,9 @@
             // 
             SERIESCELLCOUNT.Location = new Point(112, 44);
             SERIESCELLCOUNT.Maximum = new decimal(new int[] { 65535, 0, 0, 0 });
-            SERIESCELLCOUNT.Minimum = new decimal(new int[] { 1, 0, 0, 0 });
             SERIESCELLCOUNT.Name = "SERIESCELLCOUNT";
             SERIESCELLCOUNT.Size = new Size(99, 23);
             SERIESCELLCOUNT.TabIndex = 11;
-            SERIESCELLCOUNT.Value = new decimal(new int[] { 24, 0, 0, 0 });
             // 
             // label6
             // 
@@ -514,7 +497,6 @@
             CELLCAPAH.Name = "CELLCAPAH";
             CELLCAPAH.Size = new Size(99, 23);
             CELLCAPAH.TabIndex = 10;
-            CELLCAPAH.Value = new decimal(new int[] { 1, 0, 0, 0 });
             // 
             // label15
             // 
@@ -646,7 +628,6 @@
             tempsensorcount.Name = "tempsensorcount";
             tempsensorcount.Size = new Size(76, 23);
             tempsensorcount.TabIndex = 28;
-            tempsensorcount.Value = new decimal(new int[] { 8, 0, 0, 0 });
             // 
             // label25
             // 
@@ -733,7 +714,7 @@
             maxcellv.Name = "maxcellv";
             maxcellv.Size = new Size(100, 23);
             maxcellv.TabIndex = 15;
-            maxcellv.Text = "3200";
+            maxcellv.Text = "4200";
             maxcellv.TextChanged += CELLSETTINGS_TextChanged;
             maxcellv.KeyPress += cellsettings_KeyPress;
             // 
@@ -752,7 +733,7 @@
             mincellv.Name = "mincellv";
             mincellv.Size = new Size(100, 23);
             mincellv.TabIndex = 16;
-            mincellv.Text = "2800";
+            mincellv.Text = "2500";
             mincellv.TextChanged += CELLSETTINGS_TextChanged;
             mincellv.KeyPress += cellsettings_KeyPress;
             // 
@@ -794,7 +775,6 @@
             Controls.Add(groupBox4);
             Controls.Add(ReadCfg);
             Controls.Add(GenerateCfg);
-            Controls.Add(AssembleBinFile);
             Controls.Add(groupBox3);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
@@ -870,7 +850,6 @@
         private Label label13;
         private NumericUpDown BUGFIXVERSION;
         private Label label14;
-        private Button AssembleBinFile;
         private Button GenerateCfg;
         private Button ReadCfg;
         private GroupBox groupBox4;

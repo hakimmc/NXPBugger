@@ -117,7 +117,6 @@ namespace NXPBugger
             {
                 if (Api.Read(PcanChannel, out CanRXMessage) == PcanStatus.OK)
                 {
-                    if(InfiniteLoop) CanReplace(CanRXMessage, NXPBuggerv1.CanDatasRXID, NXPBuggerv1.CanDatasRXDLC, NXPBuggerv1.CanDatasRXD1, NXPBuggerv1.CanDatasRXD2, NXPBuggerv1.CanDatasRXD3, NXPBuggerv1.CanDatasRXD4, NXPBuggerv1.CanDatasRXD5, NXPBuggerv1.CanDatasRXD6, NXPBuggerv1.CanDatasRXD7, NXPBuggerv1.CanDatasRXD8);
                     if (CanRXMessage.ID != ID || CanRXMessage.MsgType != MSG_FRMT || CanRXMessage.DLC != DLC)
                         continue;
 
